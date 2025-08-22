@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&family=Smokum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import "tailwindcss";
+
+:root{
+  --YellowMain: #fbeb0e;
+  --BrownMain: #93411d;
+  --BrownSecond: #382618;
+  --OrangeMain: #cb762f;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+}
+
+.logo{
+  font-family: "Smokum", serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.effect-blur {
+  backdrop-filter: blur(60px);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.title{
+  font-family: "Dancing Script", cursive;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  /* color semitransparente */
+  color: white;
+  font-size: .9rem;
+  backdrop-filter: blur(20px);
+  z-index: 1000;
+}
+
+/* SECTION PRESENTATION */
+.bg-presentation{
+  background-image: url("./assets/images/fondo-principal.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Overlay en la parte izquierda */
+.bg-presentation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  /* cubre la mitad izquierda */
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
+  /* sombra negra con opacidad */
+  z-index: 1;
+}
+
+.bg-aboutus{
+  position: relative;
+  background-image: url("./assets/images/fondo-nosotros.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Overlay degradado */
+.bg-aboutus::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  /* controla hasta dónde llega la sombra */
+  height: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  z-index: 2;
+}
+
+.bg-menu{
+  position: relative;
+  background-image: url("./assets/images/fondo-menu.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+
+
+.cardmenu-item{
+  transition: all 0.3s ease;
+}
+
+.cardmenu-item img{
+  transition: all 0.3s ease;
+}
+
+.cardmenu-item:hover img{
+  transform: scale(1.15);
+}
+
+.cardmenu-item .text-price{
+  color: var(--YellowMain);
+}
+
+.cardmenu-item:hover {
+  transform: translateY(-10px);
+  background-color: var(--YellowMain);
+  color: black;
+}
+
+.cardmenu-item:hover .text-price {
+  color: black;
+}
+
