@@ -1,4 +1,5 @@
 import ComidaPrueba from "../assets/images/comida-prueba.jpg";
+import { FaWhatsapp } from "react-icons/fa";
 
 const CardMenu = () => {
   return (
@@ -13,6 +14,15 @@ const CardMenu = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, vel.
       </p>
       <p className="text-price font-bold text-2xl">S/24.00</p>
+      <div>
+        <a
+          href="#"
+          className="flex items-center justify-center gap-x-2 border rounded-full py-2 button-cardmenu-item"
+        >
+          <FaWhatsapp size={20} />
+          Pedir por whatsApp
+        </a>
+      </div>
     </div>
   );
 };

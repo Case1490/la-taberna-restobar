@@ -95,8 +95,6 @@ body{
   min-height: 100vh;
 }
 
-
-
 .cardmenu-item{
   transition: all 0.3s ease;
 }
@@ -123,3 +121,17 @@ body{
   color: black;
 }
 
+.cardmenu-item:hover .button-cardmenu-item{
+  background-color: var(--BrownMain);
+  color: white;
+  border: 0;
+}
+
+.bg-bestfood {
+  position: relative;
+  background-image: url("./assets/images/fondo-mejorcomida.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
