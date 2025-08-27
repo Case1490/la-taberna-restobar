@@ -17,7 +17,7 @@ const Menu = () => {
           <CardMenu />
           <CardMenu />
         </div>
-        <button className="px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg shadow-lg transition">
+        <button className="px-6 py-3  bg-[var(--YellowMain)] text-black font-semibold rounded-lg shadow-lg transition">
           Ver carta completa
         </button>
       </div>

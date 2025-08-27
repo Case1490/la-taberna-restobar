@@ -122,8 +122,8 @@ body {
 }
 
 .cardmenu-item:hover .button-cardmenu-item {
-  background-color: var(--BrownMain);
-  color: white;
+  background-color: rgb(20, 243, 0);
+  color: black;
   border: 0;
 }
 
@@ -139,6 +139,15 @@ body {
 .bg-cardfoods {
   position: relative;
   background-image: url("./assets/images/fondo-cartamenu.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.bg-locationSchedule {
+  position: relative;
+  background-image: url("./assets/images/fondo-ubicacion.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

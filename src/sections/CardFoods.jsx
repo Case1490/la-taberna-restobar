@@ -50,7 +50,7 @@ const CardFoods = () => {
           {categories.map((cat, index) => (
             <div
               key={index}
-              className=" bg-black/50 border border-white p-6 rounded-2xl shadow-md flex flex-col items-center justify-center hover:scale-105 hover:shadow-xl transition transform"
+              className=" bg-black/50 border border-white p-6 rounded-full shadow-md flex flex-col items-center justify-center hover:scale-105 hover:shadow-xl transition transform"
             >
               <div className="mb-4">{cat.icon}</div>
               <h3 className="text-lg font-semibold text-white">{cat.name}</h3>
