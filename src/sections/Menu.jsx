@@ -7,9 +7,7 @@ const Menu = () => {
       <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]"></div>
 
       <div className="relative w-5/6 m-auto text-center text-white py-20">
-        <h1 className="text-6xl title font-bold mb-10">
-          Nuestros mejores platos
-        </h1>
+        <h1 className="text-5xl font-bold mb-14">Nuestros mejores platos</h1>
 
         <div className="grid grid-cols-3 gap-8 my-10">
           <CardMenu />

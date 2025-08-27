@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&family=Smokum&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&family=Smokum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 @import "tailwindcss";
 
-:root{
+:root {
   --YellowMain: #fbeb0e;
   --BrownMain: #93411d;
   --BrownSecond: #382618;
   --OrangeMain: #cb762f;
 }
 
-body{
+body {
   font-family: "Poppins", sans-serif;
 }
 
-.logo{
+.logo {
   font-family: "Smokum", serif;
   font-size: 2rem;
   font-weight: bold;
@@ -24,7 +24,7 @@ body{
   background: rgba(0, 0, 0, 0.2);
 }
 
-.title{
+.title {
   font-family: "Dancing Script", cursive;
 }
 
@@ -36,13 +36,13 @@ body{
   background: rgba(0, 0, 0, 0.2);
   /* color semitransparente */
   color: white;
-  font-size: .9rem;
+  font-size: 0.9rem;
   backdrop-filter: blur(20px);
   z-index: 1000;
 }
 
 /* SECTION PRESENTATION */
-.bg-presentation{
+.bg-presentation {
   background-image: url("./assets/images/fondo-principal.jpg");
   background-position: center center;
   background-size: cover;
@@ -64,7 +64,7 @@ body{
   z-index: 1;
 }
 
-.bg-aboutus{
+.bg-aboutus {
   position: relative;
   background-image: url("./assets/images/fondo-nosotros.jpg");
   background-position: center center;
@@ -86,7 +86,7 @@ body{
   z-index: 2;
 }
 
-.bg-menu{
+.bg-menu {
   position: relative;
   background-image: url("./assets/images/fondo-menu.jpg");
   background-position: center center;
@@ -95,19 +95,19 @@ body{
   min-height: 100vh;
 }
 
-.cardmenu-item{
+.cardmenu-item {
   transition: all 0.3s ease;
 }
 
-.cardmenu-item img{
+.cardmenu-item img {
   transition: all 0.3s ease;
 }
 
-.cardmenu-item:hover img{
+.cardmenu-item:hover img {
   transform: scale(1.15);
 }
 
-.cardmenu-item .text-price{
+.cardmenu-item .text-price {
   color: var(--YellowMain);
 }
 
@@ -121,7 +121,7 @@ body{
   color: black;
 }
 
-.cardmenu-item:hover .button-cardmenu-item{
+.cardmenu-item:hover .button-cardmenu-item {
   background-color: var(--BrownMain);
   color: white;
   border: 0;
@@ -130,6 +130,15 @@ body{
 .bg-bestfood {
   position: relative;
   background-image: url("./assets/images/fondo-mejorcomida.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.bg-cardfoods {
+  position: relative;
+  background-image: url("./assets/images/fondo-cartamenu.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

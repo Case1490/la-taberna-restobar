@@ -6,7 +6,7 @@ const BestFood = () => {
     <div className="bg-bestfood">
       <div className="w-5/6 m-auto min-h-screen flex items-center justify-center gap-x-4">
         <div className="w-1/2 space-y-8 text-white">
-          <h2>⭐ Recomendación del Chef</h2>
+          <h2 className="font-bold">⭐ Recomendación del Chef</h2>
           <h1 className="text-6xl font-bold title text-[var(--YellowMain)]">
             Alitas Irresistibles para Todos los Gustos
           </h1>
