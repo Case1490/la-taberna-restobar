@@ -1,4 +1,4 @@
-import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF, FaTiktok, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="w-5/6 mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
         {/* Logo o Nombre */}
         <div>
-          <h2 className="text-2xl font-bold logo text-[var(--YellowMain)] mb-4">
+          <h2 className="text-2xl font-bold logo uppercase text-[var(--YellowMain)] mb-4">
             La Taberna
           </h2>
           <p className="text-sm">
@@ -19,24 +19,19 @@ const Footer = () => {
         {/* Links rápidos */}
         <div className="text-center">
           <h3 className="text-xl font-semibold mb-4">Enlaces</h3>
-          <ul className="space-y-2">
+          <ul className="space-y-4">
             <li>
-              <a href="#home" className="hover:text-[var(--YellowMain)]">
+              <a href="#inicio" className="link-underline">
                 Inicio
               </a>
             </li>
             <li>
-              <a href="#menu" className="hover:text-[var(--YellowMain)]">
+              <a href="#menu" className="link-underline">
                 Menú
               </a>
             </li>
             <li>
-              <a href="#contact" className="hover:text-[var(--YellowMain)]">
-                Contacto
-              </a>
-            </li>
-            <li>
-              <a href="#ubicacion" className="hover:text-[var(--YellowMain)]">
+              <a href="#ubicacion" className="link-underline">
                 Ubicación
               </a>
             </li>
@@ -48,20 +43,26 @@ const Footer = () => {
           <h3 className="text-xl font-semibold mb-4">Síguenos</h3>
           <div className="flex justify-center space-x-4">
             <a
-              href="#"
-              className="p-3 bg-gray-800 rounded-full hover:bg-[var(--YellowMain)] hover:text-black transition"
+              href="https://www.facebook.com/share/1BFkwX9LAJ/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 bg-gray-800 rounded-full animation-button-sn"
             >
               <FaFacebookF />
             </a>
             <a
-              href="#"
-              className="p-3 bg-gray-800 rounded-full hover:bg-[var(--YellowMain)] hover:text-black transition"
+              href="https://www.tiktok.com/@la.taberna.rb?_t=ZS-8z44GPdYsb4&_r=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 bg-gray-800 rounded-full animation-button-sn"
             >
-              <FaInstagram />
+              <FaTiktok />
             </a>
             <a
-              href="#"
-              className="p-3 bg-gray-800 rounded-full hover:bg-[var(--YellowMain)] hover:text-black transition"
+              href="https://wa.me/51959588954"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 bg-gray-800 rounded-full animation-button-sn"
             >
               <FaWhatsapp />
             </a>

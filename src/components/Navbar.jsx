@@ -52,7 +52,9 @@ const Navbar = () => {
     >
       <div className="flex text-white p-2 items-center justify-between w-5/6 mx-auto uppercase">
         {/* Logo */}
-        <h1 className="logo">La Taberna</h1>
+        <a className="logo" href="#inicio">
+          La Taberna
+        </a>
 
         {/* Botón hamburguesa */}
         <button onClick={() => setIsOpen(true)} className="md:hidden">
@@ -62,24 +64,25 @@ const Navbar = () => {
         {/* Menú escritorio */}
         <ul className="hidden md:flex gap-6">
           <li>
-            <a href="#" className="link-underline">
+            <a href="#inicio" className="link-underline">
               Inicio
             </a>
           </li>
           <li>
-            <a href="#" className="link-underline">
+            <a href="#menu" className="link-underline">
               Menú
             </a>
           </li>
           <li>
-            <a href="#" className="link-underline">
-              Reservas
+            <a href="#ubicacion" className="link-underline">
+              Ubicación
             </a>
           </li>
         </ul>
-
         <a
-          href="#"
+          href="https://wa.me/51959588954?text=Hola%2C%20deseo%20más%20información"
+          target="_blank"
+          rel="noopener noreferrer"
           className="border hidden md:block border-white button-bg-white px-3 py-2 rounded-full"
         >
           Contacto

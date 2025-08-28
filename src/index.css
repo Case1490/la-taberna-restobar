@@ -10,6 +10,10 @@
   --swiper-navigation-color: var(--YellowMain);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -61,7 +65,7 @@ body {
   /* separa un poco del texto */
   width: 100%;
   height: 2px;
-  background: white;
+  background: var(--YellowMain);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
@@ -222,4 +226,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
+}
+
+.animation-button-sn{
+  transition: all 300ms ease;
+}
+
+.animation-button-sn:hover{
+  background-color: var(--YellowMain);
+  color: black;
 }

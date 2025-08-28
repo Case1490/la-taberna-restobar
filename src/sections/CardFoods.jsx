@@ -41,12 +41,12 @@ const CardFoods = () => {
       <div className="absolute inset-0 bg-black/60"></div>
 
       <div className="relative z-10">
-        <h2 className="text-4xl font-bold mb-10 text-white drop-shadow-lg">
-          Nuestra Carta
+        <h2 className="text-3xl md:text-4xl font-bold mb-10 text-white drop-shadow-lg">
+          Nuestra Carta 📋
         </h2>
 
         {/* Grid de categorías */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {categories.map((cat, index) => (
             <div
               key={index}

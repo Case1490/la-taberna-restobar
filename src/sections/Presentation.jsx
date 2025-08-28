@@ -3,7 +3,7 @@ import { ImSpoonKnife } from "react-icons/im";
 
 const Presentation = () => {
   return (
-    <div className="bg-presentation">
+    <div className="bg-presentation" id="inicio">
       <div className="w-5/6 m-auto min-h-screen flex items-center relative z-10">
         <div className="w-full text-center md:text-left md:w-1/2 space-y-8 text-white">
           <h1 className="text-5xl md:text-6xl font-bold title text-[var(--YellowMain)]">
@@ -16,14 +16,16 @@ const Presentation = () => {
           </p>
           <div className="flex gap-4 justify-center md:justify-start">
             <a
-              href="#"
-              className="bg-white text-sm md:text-lg text-black capitalize p-3 rounded-full flex items-center gap-x-2"
+              href="#menu"
+              className="bg-white text-sm text-black capitalize p-3 rounded-full flex items-center gap-x-2"
             >
               Ver menú <GiHamburger />
             </a>
             <a
-              href="#"
-              className="border border-white text-sm md:text-lg button-bg-white capitalize rounded-full p-3 flex items-center gap-x-2"
+              href="https://wa.me/51959588954?text=Hola%2C%20quiero%20reservar%20una%20mesa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-white text-sm button-bg-white capitalize rounded-full p-3 flex items-center gap-x-2"
             >
               Reservar mesa <ImSpoonKnife />
             </a>

@@ -3,10 +3,12 @@ import { MdLocationOn } from "react-icons/md";
 
 const LocationSchedule = () => {
   return (
-    <div className="bg-locationSchedule py-16 px-6 text-center">
+    <div className="bg-locationSchedule py-16 px-6 text-center" id="ubicacion">
       <div className="absolute inset-0 bg-black/60"></div>
-      <div className="relative z-10 text-white">
-        <h2 className="text-4xl font-bold mb-8">📍 Ubicación & Horarios</h2>
+      <div className="relative w-5/6 m-auto z-10 text-white">
+        <h2 className="text-2xl md:text-4xl font-bold mb-8">
+          📍 Ubicación & Horarios
+        </h2>
 
         {/* Google Maps */}
         <div className="flex justify-center mb-8">
@@ -15,18 +17,18 @@ const LocationSchedule = () => {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="w-full h-[350px] md:h-[450px] max-w-3xl rounded-xl shadow-lg"
+            className="w-full h-[250px] md:h-[450px] max-w-3xl rounded-xl shadow-lg"
             style={{ border: 0 }}
           ></iframe>
         </div>
 
         {/* Horarios */}
         <div className="flex flex-col items-center mb-6">
-          <p className="flex items-center text-lg mb-2">
+          <p className="flex items-center text-sm md:text-lg mb-2">
             <FaClock className="mr-2 text-[var(--YellowMain)]" /> Lunes -
             Viernes: 12:00 pm - 11:00 pm
           </p>
-          <p className="flex items-center text-lg mb-2">
+          <p className="flex items-center text-sm md:text-lg mb-2">
             <MdLocationOn className="mr-2 text-[var(--YellowMain)]" />{" "}
             Referencia: Una cuadra antes de la Plaza Tarapoto
           </p>
@@ -37,7 +39,7 @@ const LocationSchedule = () => {
           href="https://maps.app.goo.gl/KEaVZPPUjEtTPSvN6"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center bg-[var(--YellowMain)] text-black px-6 py-3 rounded-full font-semibold shadow-md hover:bg-yellow-600 transition"
+          className="inline-flex items-center bg-[var(--YellowMain)] text-black px-6 py-3 rounded-full text-sm md:text-lg font-semibold shadow-md hover:bg-yellow-600 transition"
         >
           <FaDirections className="mr-2" /> Cómo llegar
         </a>
