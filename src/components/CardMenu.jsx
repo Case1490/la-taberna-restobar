@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const CardMenu = () => {
   return (
-    <div className="px-3 py-5 rounded-2xl space-y-3 border effect-blur cardmenu-item">
+    <div className="px-3 py-5 my-4 mx-12 rounded-2xl space-y-3 border effect-blur cardmenu-item">
       <div className="w-[200px] m-auto mb-4">
         <img src={ComidaPrueba} alt="Nombre" className="w-full" />
       </div>

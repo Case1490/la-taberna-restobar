@@ -7,6 +7,7 @@
   --BrownMain: #93411d;
   --BrownSecond: #382618;
   --OrangeMain: #cb762f;
+  --swiper-navigation-color: var(--YellowMain);
 }
 
 body {
@@ -33,12 +34,50 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.8);
   /* color semitransparente */
   color: white;
   font-size: 0.9rem;
-  backdrop-filter: blur(20px);
-  z-index: 1000;
+  padding: 10px;
+  z-index: 50;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    background: none;
+  }
+}
+
+.link-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  /* separa un poco del texto */
+  width: 100%;
+  height: 2px;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.link-underline:hover::after {
+  transform: scaleX(1);
+}
+
+.button-bg-white {
+  transition: all 300ms ease;
+}
+
+.button-bg-white:hover {
+  background-color: white;
+  color: black;
 }
 
 /* SECTION PRESENTATION */
@@ -64,6 +103,14 @@ body {
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .bg-presentation::before {
+    width: 100%;
+    height: 170%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent);
+  }
+}
+
 .bg-aboutus {
   position: relative;
   background-image: url("./assets/images/fondo-nosotros.jpg");
@@ -84,6 +131,18 @@ body {
   height: 100%;
   background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
   z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .bg-aboutus {
+    padding: 10px 0;
+    position: relative;
+    background-image: url("./assets/images/fondo-nosotros-responsive.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
 }
 
 .bg-menu {
@@ -122,9 +181,20 @@ body {
 }
 
 .cardmenu-item:hover .button-cardmenu-item {
-  background-color: rgb(20, 243, 0);
-  color: black;
+  background-color: black;
+  color: white;
   border: 0;
+}
+
+.cardmenu-item .button-cardmenu-item:hover {
+  background-color: rgb(65, 64, 64);
+  color: white;
+  border: 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+  color: var(--YellowMain);
 }
 
 .bg-bestfood {
