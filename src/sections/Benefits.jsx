@@ -18,7 +18,7 @@ const Benefits = () => {
     {
       icon: <FaUtensils className="w-8 h-8 text-yellow-400" />,
       title: "Ingredientes frescos",
-      text: "Productos de primera calidad, directo del mar y la granja.",
+      text: "Ingredientes frescos y de la mejor calidad, seleccionados para cada plato.",
     },
     {
       icon: <FaCheckCircle className="w-8 h-8 text-yellow-400" />,

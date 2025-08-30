@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 
+import Logo from "../assets/images/logo.png";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -50,11 +52,14 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 w-full z-[50] transition-colors duration-200 ${navBgClass}`}
     >
-      <div className="flex text-white p-2 items-center justify-between w-5/6 mx-auto uppercase">
+      <div className="flex text-white items-center justify-between w-5/6 mx-auto uppercase">
         {/* Logo */}
-        <a className="logo" href="#inicio">
+        {/* <a className="logo" href="#inicio">
           La Taberna
-        </a>
+        </a> */}
+        <div className="w-[90px]">
+          <img src={Logo} alt="LaTaberna" className="w-full" />
+        </div>
 
         {/* Botón hamburguesa */}
         <button onClick={() => setIsOpen(true)} className="md:hidden">

@@ -28,12 +28,11 @@ const AboutUs = () => {
             transition={{ duration: 1, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            En <span className="font-bold">La Taberna</span> te esperamos con
-            las mejores alitas, burgers y cervezas heladas en un ambiente único
-            para compartir entre amigos. Te esperamos con las mejores alitas,
-            burgers y cervezas heladas en un ambiente único para compartir entre
-            amigos. Te esperamos con las mejores alitas, burgers y cervezas
-            heladas en un ambiente único para compartir entre amigos.
+            En <span className="font-bold">La Taberna</span> creemos que salir a
+            comer no es solo compartir un plato, sino crear momentos que se
+            disfrutan de principio a fin. Por eso cuidamos cada detalle: desde
+            la selección de ingredientes frescos y de primera calidad, hasta la
+            atención cercana y un ambiente acogedor que invita a quedarse.
           </motion.p>
         </motion.div>
       </div>

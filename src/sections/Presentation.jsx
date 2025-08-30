@@ -18,7 +18,7 @@ const Presentation = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
           >
-            Sabores que acompañan cada brindis
+            Sabores que acompañan cada momento
           </motion.h1>
 
           <motion.p
