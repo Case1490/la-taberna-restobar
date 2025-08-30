@@ -23,7 +23,7 @@ const BestFood = () => {
           <a
             href="https://wa.me/51959588954?text=Hola%20quiero%20hacer%20un%20pedido%20de%20las%20alitas"
             target="_blank"
-            className="bg-[var(--YellowMain)] text-black px-6 py-3 rounded-lg font-bold inline-flex items-center justify-center gap-x-2"
+            className="bg-[var(--YellowMain)] text-black px-6 py-3 rounded-lg font-bold inline-flex items-center justify-center gap-x-2 button-hover-yellow"
           >
             <FaWhatsapp size={20} />
             ¡Pedir ahora!

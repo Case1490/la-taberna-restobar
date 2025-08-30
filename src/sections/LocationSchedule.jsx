@@ -39,7 +39,7 @@ const LocationSchedule = () => {
           href="https://maps.app.goo.gl/KEaVZPPUjEtTPSvN6"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center bg-[var(--YellowMain)] text-black px-6 py-3 rounded-full text-sm md:text-lg font-semibold shadow-md hover:bg-yellow-600 transition"
+          className="inline-flex items-center bg-[var(--YellowMain)] text-black px-6 py-3 rounded-full text-sm md:text-lg font-semibold button-hover-yellow"
         >
           <FaDirections className="mr-2" /> Cómo llegar
         </a>

@@ -16,7 +16,7 @@ const Presentation = () => {
           </p>
           <div className="flex gap-4 justify-center md:justify-start">
             <a
-              href="#menu"
+              href="#carta"
               className="bg-white text-sm text-black capitalize p-3 rounded-full flex items-center gap-x-2"
             >
               Ver menú <GiHamburger />

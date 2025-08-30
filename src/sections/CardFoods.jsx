@@ -6,6 +6,7 @@ import {
   FaGlassWhiskey,
   FaTint,
 } from "react-icons/fa";
+import { LuNewspaper } from "react-icons/lu";
 
 const categories = [
   {
@@ -36,7 +37,7 @@ const categories = [
 
 const CardFoods = () => {
   return (
-    <section className="relative py-16 px-6 text-center bg-cardfoods">
+    <div className="relative py-16 px-6 text-center bg-cardfoods" id="carta">
       {/* Overlay oscuro */}
       <div className="absolute inset-0 bg-black/60"></div>
 
@@ -60,14 +61,15 @@ const CardFoods = () => {
 
         {/* Botón */}
         <a
-          className="mt-10 bg-[var(--YellowMain)] text-black px-6 py-3 rounded-lg font-bold inline-flex items-center justify-center gap-x-2"
+          className="mt-10 bg-[var(--YellowMain)] text-black px-6 py-3 rounded-lg font-bold inline-flex items-center justify-center gap-x-2 button-hover-yellow"
           href="/carta-La-Taberna.pdf"
           download="Carta-La-Taberna.pdf"
         >
-          Ver Carta Completa
+          <LuNewspaper size={20} />
+          Ver Carta
         </a>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -69,7 +69,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="#menu" className="link-underline">
+            <a href="#carta" className="link-underline">
               Menú
             </a>
           </li>

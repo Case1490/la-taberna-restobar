@@ -236,3 +236,11 @@ body {
   background-color: var(--YellowMain);
   color: black;
 }
+
+.button-hover-yellow{
+  transition: all 300ms ease;
+}
+
+.button-hover-yellow:hover{
+  background-color: rgb(252, 255, 49);
+}

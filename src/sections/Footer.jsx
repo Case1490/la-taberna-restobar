@@ -6,9 +6,12 @@ const Footer = () => {
       <div className="w-5/6 mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
         {/* Logo o Nombre */}
         <div>
-          <h2 className="text-2xl font-bold logo uppercase text-[var(--YellowMain)] mb-4">
+          <a
+            href="#"
+            className="text-2xl inline-block font-bold logo uppercase text-[var(--YellowMain)] mb-4"
+          >
             La Taberna
-          </h2>
+          </a>
           <p className="text-sm">
             Tu punto de encuentro en Tarapoto para comer, beber y disfrutar, con
             una carta variada, tragos únicos y el mejor ambiente para compartir
