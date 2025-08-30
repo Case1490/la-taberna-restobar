@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import CardMenu from "../components/CardMenu";
 import { LuNewspaper } from "react-icons/lu";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -64,50 +65,67 @@ const Menu = () => {
       <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]"></div>
 
       <div className="relative w-5/6 m-auto text-center text-white py-20">
-        <h1 className="text-3xl md:text-5xl font-bold mb-14">
+        <motion.h1
+          className="text-3xl md:text-4xl font-bold mb-14"
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
           Nuestros mejores platos 🍽️
-        </h1>
+        </motion.h1>
 
         {/* Swiper Carrusel */}
-        <Swiper
-          modules={[Navigation, Autoplay]}
-          spaceBetween={0}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
-          autoplay={{ delay: 4000 }}
-          breakpoints={{
-            320: { slidesPerView: 1 },
-            640: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-          className="my-10 px-6"
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
         >
-          {foods.map((food, index) => (
-            <SwiperSlide key={index}>
-              <CardMenu
-                imageFood={food.imageFood}
-                title={food.title}
-                paragraph={food.paragraph}
-                price={food.price}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+          <Swiper
+            modules={[Navigation, Autoplay]}
+            spaceBetween={0}
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
+            autoplay={{ delay: 4000 }}
+            breakpoints={{
+              320: { slidesPerView: 1 },
+              640: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+            className="my-10 px-6"
+          >
+            {foods.map((food, index) => (
+              <SwiperSlide key={index}>
+                <CardMenu
+                  imageFood={food.imageFood}
+                  title={food.title}
+                  paragraph={food.paragraph}
+                  price={food.price}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </motion.div>
 
         {/* Botones de navegación */}
         <div className="swiper-button-prev"></div>
         <div className="swiper-button-next"></div>
 
-        <a
+        <motion.a
           className=" bg-[var(--YellowMain)] text-black px-6 py-3 rounded-lg font-bold inline-flex items-center justify-center gap-x-2 button-hover-yellow"
           href="/carta-La-Taberna.pdf"
           download="Carta-La-Taberna.pdf"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.3 }}
+          viewport={{ once: true }}
         >
           <LuNewspaper size={20} />
           Ver Carta Completa
-        </a>
+        </motion.a>
       </div>
     </div>
   );

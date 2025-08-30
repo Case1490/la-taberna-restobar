@@ -29,7 +29,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#menu" className="link-underline">
+              <a href="#carta" className="link-underline">
                 Menú
               </a>
             </li>
@@ -73,9 +73,8 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Línea final */}
       <div className="mt-10 border-t border-gray-700 pt-4 text-center text-sm">
-        © 2025 La Taberna. Todos los derechos reservados.
+        © {new Date().getFullYear()} La Taberna. Todos los derechos reservados.
       </div>
     </footer>
   );

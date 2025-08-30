@@ -1,11 +1,24 @@
 import BestFoodImage from "../assets/images/palto-mejorcomida.jpg";
 import { FaWhatsapp } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const BestFood = () => {
   return (
     <div className="bg-bestfood">
-      <div className="w-5/6 m-auto min-h-screen flex lg:flex-row flex-col items-center justify-center gap-x-4 py-10 text-center lg:text-left">
-        <div className="w-full mb-10 lg:mb-0 lg:w-1/2 space-y-8 text-white">
+      <motion.div
+        className="w-5/6 m-auto min-h-screen flex lg:flex-row flex-col items-center justify-center gap-x-4 py-10 text-center lg:text-left"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.2 }} // se activa al entrar en viewport
+      >
+        <motion.div
+          className="w-full mb-10 lg:mb-0 lg:w-1/2 space-y-8 text-white"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <h2 className="font-bold">⭐ Recomendación del Chef</h2>
           <h1 className="text-4xl lg:text-6xl font-bold title text-[var(--YellowMain)]">
             Alitas Irresistibles para Todos los Gustos
@@ -28,16 +41,22 @@ const BestFood = () => {
             <FaWhatsapp size={20} />
             ¡Pedir ahora!
           </a>
-        </div>
+        </motion.div>
 
-        <div className="w-[300px] lg:w-auto">
+        <motion.div
+          className="w-[300px] lg:w-auto"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <img
             src={BestFoodImage}
             alt="Mejor comida de LaTaberna"
             className="w-full"
           />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };
